@@ -1,0 +1,18 @@
+[2025-05-09 19:22:01] Login attempt by user: admin
+[2025-05-09 19:22:37] Login attempt by user: admin
+[2025-05-09 19:22:46] Login attempt by user: admin
+[2025-05-09 19:23:23] Login attempt by user: admin - SUCCESSFUL
+[2025-05-09 19:23:23] Login attempt by user: admin
+[2025-05-09 19:23:33] Login attempt by user: admin - SUCCESSFUL
+[2025-05-09 19:23:33] Login attempt by user: admin
+[2025-05-09 19:23:43] Login attempt by user: admin - FAILED
+[2025-05-09 19:23:43] Login attempt by user: admin
+[2025-05-09 19:24:20] Login attempt by user: admin
+[2025-05-09 19:24:20] Login attempt by user: admin - SUCCESSFUL
+[2025-05-09 19:24:20] Login attempt by user: admin
+[2025-05-09 19:24:24] Login attempt by user: admin
+[2025-05-09 19:24:24] Login attempt by user: admin - FAILED
+[2025-05-09 19:24:24] Login attempt by user: admin
+[2025-05-09 19:24:32] Login attempt by user: admin
+[2025-05-09 19:24:33] Login attempt by user: admin - SUCCESSFUL
+[2025-05-09 19:24:33] Login attempt by user: admin
