@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery App</title>
-    <link rel="stylesheet" href="styles.css">
-
-</head>
+<?php
+require_once 'header.php';
+?>
 <body>
     <header>
         <h1>FooD</h1>
-        <div class="header-buttons" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <div class="header-buttons">
             <button class="btn btn-header" onclick="location.href='login.php'">Login</button>
             <button class="btn btn-header" onclick="location.href='signup.php'">Sign Up</button>
         </div>
@@ -19,22 +13,22 @@
         <h1>Sign Up</h1>
         <form action="signup.php" method="POST" onsubmit="return validateForm()">
             <div style="margin-bottom: 1rem;">
-                <label for="name" style="display: block; margin-bottom: 0.5rem;">Username</label>
-                <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                <label class="singUpLabel" for="name">Username</label>
+                <input class ="signUpInput" type="text" id="name" name="name" required>
             </div>
             <div style="margin-bottom: 1rem;">
-                <label for="email" style="display: block; margin-bottom: 0.5rem;">Email</label>
-                <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                <label class="singUpLabel" for="email">Email</label>
+                <input class ="signUpInput" type="email" id="email" name="email" required>
             </div>
             <div style="margin-bottom: 1rem;">
-                <label for="password" style="display: block; margin-bottom: 0.5rem;">Password</label>
-                <input type="password" id="password" name="password" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                <label class="singUpLabel" for="password">Password</label>
+                <input class ="signUpInput" type="password" id="password" name="password" required>
             </div>
             <div style="margin-bottom: 1rem;">
-                <label for="confirm_password" style="display: block; margin-bottom: 0.5rem;">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                <label class="singUpLabel" for="confirm_password">Confirm Password</label>
+                <input class ="signUpInput" type="password" id="confirm_password" name="confirm_password" required>
             </div>
-            <button type="submit" class="btn" style="width: 100%; padding: 0.5rem;">Sign Up</button>
+            <button id="singUpbtn" type="submit" class="btn">Sign Up</button>
         </form>
     </div>
 

@@ -1,8 +1,7 @@
 <?php
-
-
-
-
+session_start(); 
+ob_start();
+require_once 'db.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST'
     && isset($_POST['action'])
     && $_POST['action'] === 'logOut') {
@@ -10,8 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'
 }
 
 function logOut() {
-    session_start();
-
     $_SESSION = [];
 
     if (ini_get("session.use_cookies")) {
@@ -26,9 +23,8 @@ function logOut() {
             $params['httponly']
         );
     }
-
+    session_unset();
     session_destroy();
-
     header('Location: index.php');
     exit;
 }

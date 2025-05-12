@@ -1,24 +1,9 @@
 <?php
 session_start();
 ob_start();
+require_once 'header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery App</title>
-    <link rel="stylesheet" href="styles.css">
-
-</head>
 <body>
-    <header>
-        <h1>FooD</h1>
-        <div class="header-buttons" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <button class="btn btn-header" onclick="location.href='login.php'">Login</button>
-            <button class="btn btn-header" onclick="location.href='signup.php'">Sign Up</button>
-        </div>
-    </header>
     <div class="container">
         <h1>Login</h1>
         <form action="" method="POST">
