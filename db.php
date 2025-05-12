@@ -4,6 +4,10 @@ $dbname   = 'FooD';
 $username = 'admin';
 $password = 'admin';
 
+
+
+// admin admin
+// admin2 admin2
 try {
     $pdo = new PDO(
         "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
