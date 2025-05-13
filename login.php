@@ -65,6 +65,7 @@ require_once 'header.php';
 
                 if ($user) {
                 if (password_verify($password, $user['password'])) {
+                    $_SESSION['id'] = $user['id']; // Set the user ID session variable
                     $_SESSION['username'] = $user['name']; // Set the username session variable
                     $_SESSION['name'] = $user['name'];
                     header("Location: mainMenu.php");
